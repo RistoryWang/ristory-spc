@@ -1,7 +1,7 @@
 package com.ristory.controller;
 
 
-import com.ristory.remote.Server3Remote;
+import com.ristory.remote.Server1Remote;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,22 +9,23 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Server3Controller {
+public class Server1Controller {
 
 
     @Autowired
-    Server3Remote server3Remote;
+    Server1Remote server1Remote;
 
-    @RequestMapping("/server3to1/{name}")
-    public String server3to1(@PathVariable("name") String name){
+    @RequestMapping("/server1to2/{name}")
+    public String server1to2(@PathVariable("name") String name){
 
-        return server3Remote.server3to1(name);
+        return server1Remote.server1to2(name);
     }
 
-    @RequestMapping("/server3")
-    public String server3(@RequestParam String name) {
+    @RequestMapping("/server1")
+    public String server1(@RequestParam String name) {
 
         return "hello "+name+"，this is first messge";
     }
+
 
 }
