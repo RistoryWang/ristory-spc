@@ -11,12 +11,13 @@ import org.springframework.context.annotation.Bean;
 public class ZuulApplication {
 
     public static void main(String args[]){
+
         SpringApplication.run(ZuulApplication.class,args);
     }
 
-    @Bean
-    public TokenFilter tokenFilter(){
-        return new TokenFilter();
-    }
+//    @Bean
+//    public TokenFilter tokenFilter(){
+//        return new TokenFilter();
+//    }
 
 }
