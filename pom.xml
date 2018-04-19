@@ -17,6 +17,7 @@
         <module>ristory-spc-server-2</module>
         <module>ristory-spc-server-3</module>
         <module>ristory-spc-config</module>
+        <module>ristory-spc-zipkin</module>
     </modules>
     <packaging>pom</packaging>
     <name>Spring cloud for Ristory</name>

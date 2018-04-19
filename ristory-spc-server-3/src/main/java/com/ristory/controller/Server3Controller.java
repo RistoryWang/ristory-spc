@@ -24,7 +24,7 @@ public class Server3Controller {
     @RequestMapping("/server3")
     public String server3(@RequestParam String name) {
 
-        return "hello "+name+"，this is first messge";
+        return "server3 "+name+"，this is server3 messge";
     }
 
 }
