@@ -3,6 +3,7 @@ package com.ristory.controller;
 
 import com.ristory.remote.Server1Remote;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -26,6 +27,7 @@ public class Server1Controller {
 
         return "server1 "+name+"，this is server1 messge";
     }
+
 
 
 }
